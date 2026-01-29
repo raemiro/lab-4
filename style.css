@@ -1,0 +1,153 @@
+/*  =========================
+   MI PALETA DE COLORES
+   =========================
+   Primario:    #EDF4FA
+   Secundario:  #8FB6D8
+   Fondo:       #CFE3F1
+   Texto:       #243A5E
+   ========================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#CFE3F1;
+    color: #243A5E;
+}
+
+h1, h2, h3 {
+    color:#243A5E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color:#243A5E;
+    text-decoration: none;
+}
+a:hover {
+    color: #8FB6D8
+}
+header {
+    display: flex;
+    justify-content: space-between; /* ¿Cómo quieres distribuir nombre y nav? */;
+    align-items: center;
+    background-color: #EDF4FA;
+    color: #243A5E;
+    padding: 30px; /* ¿Cuánto espacio interno? */;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom:20px; /* Espacio debajo del título */;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #8FB6D8;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #243A5E;
+    background-color: rgba(255,255,255,0.2);
+}
+
+section {
+    padding: 20px;/* Espacio interno ej: 40px 20px */
+    max-width: 800px;
+    margin: 20px; /* Centra la sección */
+}
+
+section h2 {
+    margin-bottom: 10px;/* Espacio debajo del título */
+    color: #243A5E;
+}
+footer {
+    background-color: #EDF4FA;
+    color: #243A5E;
+    text-align: center;
+    padding: 60px;/* Espacio interno */
+    margin-top: 20px;/* Espacio arriba del footer */
+}
+img {
+    max-width: 200px;
+    border-radius:20%; /* ¿Circular? usa 50% */
+    border: 5px solid #8FB6D8; /* ej: 4px solid #color */
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.cards {
+    display: flex;
+    gap:20px; /* Espacio entre cards */;
+    flex-wrap: wrap;      /* Bajan si no caben */
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 260px;
+    text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #EDF4FA /* Tu color primario */;
+}
+footer {
+    background-color: #243A5E;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.footer-section a {
+    color: #EDF4FA;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #8FB6D8;
+    padding-left: 5px;
+}
