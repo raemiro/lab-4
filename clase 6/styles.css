@@ -1,0 +1,77 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Bio */
+.bio {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Links */
+.link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+
+/* ========================================
+   RESPONSIVE: Tablets y Desktop (768px+)
+   ======================================== */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .link {
+        transition: transform 0.2s ease;
+    }
+
+    .link:hover {
+        transform: scale(1.02);
+    }
+}
